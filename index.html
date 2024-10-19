@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Residential Realty</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .custom-font {
+            font-family: 'Russo One', cursive;
+            font-size: clamp(1rem, 5vw, 100px);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+        ::-webkit-scrollbar {
+    display: none;
+}
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md py-4 flex flex-col justify-center">
+        <div class="container mx-auto text-center">
+            <h1 class="custom-font text-black font-bold tracking-widest">XAIR RESIDENTIAL</h1>
+        </div>
+        <nav class="mt-4 bg-white">
+            <div class="container mx-auto flex justify-between items-center p-4">
+                <div class="flex items-center">
+                    <img src="assets/logo.jpg" alt="Logo" class="w-10 h-10 mr-3">
+                    <span class="text-xl font-bold">XAIR</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-6 text-lg text-gray-600">
+                    <ul class="flex space-x-6">
+                        <li><a href="website.html" class="hover:text-black">Home</a></li>
+                        <li><a href="#" class="hover:text-black">About</a></li>
+                        <li><a href="#" class="hover:text-black">Properties</a></li>
+                        <li><a href="#" class="hover:text-black">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-600 focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <ul id="mobile-menu" class="px-4 hidden flex-col space-y-2 text-lg text-gray-600 md:hidden">
+                <li><a href="website.html" class="hover:text-black">Home</a></li>
+                <li><a href="#" class="hover:text-black">About</a></li>
+                <li><a href="#" class="hover:text-black">Properties</a></li>
+                <li><a href="#" class="hover:text-black">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+    
+    
+
+    <main class="py-12 px-6 flex flex-col justify-center">
+        <div class="container mx-auto text-center relative">
+            <div class="relative inline-block rounded-full overflow-hidden w-full">
+                <img src="assets/modern-house-with-garage-and-car.jpg" alt="Modern House" class="object-cover w-full h-[480px]">  
+            </div>
+            <div class="absolute bottom-[-30px] left-1/2 transform -translate-x-1/2">
+                <a href="#future-section" class="bg-blue-600 text-white px-12 py-6 rounded-full hover:bg-blue-700 text-lg w-64 inline-block text-center shadow-lg hover:shadow-blue-500/50 transition-shadow duration-300">
+                    View Project
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <section id="future-section" class="bg-gray-900 text-white py-12 min-h-screen flex flex-col justify-center">
+        <div class="container mx-auto flex flex-col items-center justify-between md:flex-row">
+            <h2 class="custom-font text-4xl md:text-6xl font-bold mb-4 lg:text-left text-center lg:w-full w-4/5">
+                EXPERIENCE THE FUTURE OF HOME
+            </h2>
+            <p class="text-md md:text-xl text-gray-400 max-w-xl text-center md:text-right lg:w-full w-4/5">
+                An excellent real estate professional, integrity, in-depth community and market knowledge, marketing savvy, effective negotiation skills, and high-quality service.
+            </p>
+        </div>
+        
+    
+        <div class="container mx-auto text-center relative py-12">
+            <div class="relative inline-block rounded-full overflow-hidden w-3/4 mx-auto">
+                <img src="assets/w.webp" alt="Modern House" class="object-cover w-full h-[500px]">
+            </div>
+            <div class="absolute bottom-6 right-[450px] transform translate-x-0 md:translate-x-1/4">
+                <a href="#" class="bg-blue-600 text-white px-12 py-6 rounded-full hover:bg-blue-700 text-lg w-64 inline-block text-center shadow-lg hover:shadow-blue-500/50 transition-shadow duration-300">
+                    View Project
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-12 bg-gray-100 min-h-screen">
+        <div class="container mx-auto flex flex-col-reverse items-center justify-between md:flex-row">
+            <p class="text-md md:text-xl text-gray-400 max-w-xl text-center md:text-right lg:w-full w-4/5">
+                An excellent real estate professional, integrity, in-depth community and market knowledge, marketing savvy, effective negotiation skills, and high-quality service.
+            </p>
+            <h2 class="custom-font text-4xl md:text-6xl font-bold mb-4 lg:text-right text-center lg:w-full w-4/5">
+                WHAT OUR CLIENTS SAY ABOUT US
+            </h2>
+        </div>
+    
+        <div class="flex flex-col sm:flex-row sm:flex-wrap justify-center p-6 bg-gray-100">
+            <div class="flex flex-col items-center p-4 w-full sm:w-1/3">
+                <div class="relative inline-block rounded-full overflow-hidden w-2/3 mx-auto shadow-lg">
+                    <img src="assets/house1.jpeg" alt="Modern House" class="object-cover w-full">
+                </div>            
+                <blockquote class="mt-10 text-center text-gray-700 italic text-sm">
+                    "This product has changed my life! Highly recommend to everyone."
+                </blockquote>
+                <cite class="mt-2 text-gray-500">— John Doe</cite>
+            </div>
+        
+            <div class="flex flex-col items-center p-4 w-full sm:w-1/3">
+                <div class="relative inline-block rounded-full overflow-hidden w-2/3 mx-auto shadow-lg">
+                    <img src="assets/house2.jpeg" alt="Modern House" class="object-cover w-full">
+                </div>             
+                <blockquote class="mt-10 text-center text-gray-700 italic text-sm">
+                    "Amazing service and great quality. Will definitely buy again!"
+                </blockquote>
+                <cite class="mt-2 text-gray-500">— Jane Smith</cite>
+            </div>
+        
+            <div class="flex flex-col items-center p-4 w-full sm:w-1/3">
+                <div class="relative inline-block rounded-full overflow-hidden w-2/3 mx-auto shadow-lg">
+                    <img src="assets/house3.jpeg" alt="Modern House" class="object-cover w-full">
+                </div>             
+                <blockquote class="mt-10 text-center text-gray-700 italic text-sm">
+                    "A fantastic experience from start to finish."
+                </blockquote>
+                <cite class="mt-2 text-gray-500">— Mike Johnson</cite>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="bg-gray-900 text-white py-12 min-h-screen flex flex-col justify-center">
+
+        <div class="container mx-auto flex flex-col items-center justify-between md:flex-row">
+            <h2 class="custom-font text-4xl md:text-6xl font-bold mb-4 lg:text-left text-center lg:w-full w-4/5">
+                OUR LATEST COLLECTION
+            </h2>
+            <p class="text-md md:text-xl text-gray-400 max-w-xl text-center md:text-right lg:w-full w-4/5">
+                An excellent real estate professional, integrity, in-depth community and market knowledge, marketing savvy, effective negotiation skills, and high-quality service.
+            </p>
+        </div>
+    
+        <div class="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-6 mt-10">
+            <div class="relative rounded-lg overflow-hidden w-[300px] md:w-[400px] flex flex-col items-center">
+                <div class="relative inline-block rounded-full overflow-hidden w-full">
+                    <img src="assets/modernhouse.jpeg" alt="Property 1" class="object-cover w-full h-[600px]">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-center text-xl font-semibold mb-4">2781 LINGER LONGER DRIVE</h3>
+                    <p class="text-center text-gray-500">Greensboro, GA 30642</p>
+                </div>
+            </div>
+    
+            <div class="relative rounded-lg overflow-hidden w-[300px] md:w-[400px] flex flex-col items-center">
+                <div class="p-6">
+                    <h3 class="text-center text-xl font-semibold mb-4">2781 LINGER LONGER DRIVE</h3>
+                    <p class="text-center text-gray-500">Greensboro, GA 30642</p>
+                </div>
+                <div class="relative inline-block rounded-full overflow-hidden w-full">
+                    <img src="assets/modernhouse1.jpeg" alt="Property 2" class="object-cover w-full h-[600px]">
+                </div>
+            </div>
+    
+            <div class="relative rounded-lg overflow-hidden w-[300px] md:w-[400px] flex flex-col items-center">
+                <div class="relative inline-block rounded-full overflow-hidden w-full">
+                    <img src="assets/modernhouse3.jpeg" alt="Property 3" class="object-cover w-full h-[600px]">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-center text-xl font-semibold mb-4">2781 LINGER LONGER DRIVE</h3>
+                    <p class="text-center text-gray-500">Greensboro, GA 30642</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-gray-100 min-h-screen">
+        <div class="container mx-auto flex justify-center items-center mt-20 mb-10"></div>
+            <h2 class="custom-font text-4xl md:text-6xl font-bold mb-4 text-center">
+                DISCOVER YOUR PERFECT HOME
+            </h2>
+        </div>
+    
+        <div class="container mx-auto flex justify-center relative py-12">
+            <div class="relative inline-block rounded-full overflow-hidden w-4/5"> <!-- Adjusted width -->
+                <img src="assets/w.webp" alt="Modern House" class="object-cover w-full h-[500px]">
+            </div>
+        </div>
+    
+        <div class="container mx-auto flex justify-center items-center mt-10 mb-10">
+            <h2 class="custom-font text-4xl md:text-6xl font-bold mb-4 text-center">
+                IS NOW OR NEVER WITH XAIR RESIDENTIAL
+            </h2>
+        </div>
+    </section>
+
+    <section class="py-12 bg-gray-900 min-h-screen flex items-center">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <h2 class="px-4 custom-font text-[3rem] md:text-[5rem] font-bold mb-4 text-left md:w-1/2 text-white text-center md:text-left">
+                YOUR DREAM HOME AWAITS DON'T MISS OUT
+            </h2>
+            <div class="relative inline-block rounded-lg overflow-hidden w-full md:w-1/2">
+                <img src="assets/housemodel.png" alt="Dream Home" class="object-cover w-full h-auto">
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer class="bg-gray-800 text-white py-2 flex flex-col justify-center">
+        <div class="container mx-auto text-center">
+            <p class="text-sm md:text-base">&copy; 2024 DEVXAIR. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

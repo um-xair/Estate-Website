@@ -6,6 +6,8 @@
 
 ## Website Description
 Our estate website offers a sleek and user-friendly design, making property hunting a breeze. With a focus on clean UI/UX, the site highlights top real estate listings, offers expert advice, and provides seamless navigation to help you find your dream home. Start your property journey here! 
+
+## Technologies Used
 This project utilizes **HTML**, **CSS**, and **Tailwind CSS** for styling, ensuring a responsive and modern design. The icons below represent the technologies used:
 
 <div align="center">
